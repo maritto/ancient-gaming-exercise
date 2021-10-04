@@ -1,0 +1,10 @@
+@import "../../../styling/utilities.scss";
+@import "../../../styling/typography.scss";
+
+:host {
+  background-color: #f0f0f2;
+  align-self: flex-start;
+  @include p(1);
+  @include h1;
+  @include text-500;
+}

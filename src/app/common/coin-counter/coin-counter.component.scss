@@ -1,0 +1,8 @@
+@import "../../../styling/typography";
+
+span {
+  @include h1;
+  margin: auto;
+  text-transform: uppercase;
+  color: white;
+}

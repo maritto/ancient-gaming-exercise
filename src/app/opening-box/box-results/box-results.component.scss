@@ -1,0 +1,13 @@
+@import "../../../styling/colors.scss";
+@import "../../../styling/utilities.scss";
+
+:host {
+  display: flex;
+  flex: 1 1 auto;
+  background-color: $super-ligh-surface-color;
+  @include p(1);
+  @include g(1);
+  @include mt(3);
+  overflow: auto;
+  max-width: 100%;
+}

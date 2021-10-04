@@ -1,0 +1,48 @@
+@import '../forms';
+
+.btn {
+  position: relative;
+  padding: $padding;
+  border-radius: 6px;
+  @include h1;
+  @include px(3);
+  cursor: pointer;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-image: url("/assets/png/spiderweb.png");
+    background-size: contain;
+  }
+  transition: .1s transform, .1s box-shadow;
+}
+
+@each $color-name, $color-value in $color-list {
+  .btn-#{$color-name} {
+    border: none;
+    background-color: #{$color-value} !important;
+    box-shadow: 0 3px 0 #{$color-value}55;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 0 #{$color-value}55;
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 0 #{$color-value}55;
+    }
+  }
+}
+
+input {
+  &[type="text"],
+  &[type="password"] {
+    @include text-500;
+    padding: $padding;
+  }
+}

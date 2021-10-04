@@ -1,0 +1,21 @@
+@import "../typography";
+
+@font-face {
+  font-family: "Flama";
+  src: url("../../assets/fonts/flama-basic.woff");
+}
+
+@font-face {
+  font-family: "Flama";
+  src: url("../../assets/fonts/flama-bold.woff");
+  font-weight: 900;
+  font-style: italic, oblique;
+}
+
+.h1 {
+  @include h1;
+}
+
+.text-500 {
+  @include text-500;
+}

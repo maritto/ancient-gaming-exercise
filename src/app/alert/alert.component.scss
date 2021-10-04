@@ -1,0 +1,10 @@
+@import "../../styling/colors.scss";
+@import "../../styling/utilities.scss";
+
+:host {
+  display: flex;
+  background-color: map-get($map: $color-list, $key: "danger");
+  @include p(2);
+  @include mb(2);
+  border-radius: 6px;
+}

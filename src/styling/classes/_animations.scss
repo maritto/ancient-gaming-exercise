@@ -1,0 +1,7 @@
+@import "../animations.scss";
+
+@keyframes hover {
+  50% {
+    @include hover(10px);
+  }
+}

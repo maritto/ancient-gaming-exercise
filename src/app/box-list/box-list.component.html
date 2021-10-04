@@ -1,0 +1,3 @@
+<ng-container *ngFor="let box of boxList">
+  <ag-box-card *ngIf="box.node" [box]="box.node" (click)="openBox(box.node.id)"></ag-box-card>
+</ng-container>

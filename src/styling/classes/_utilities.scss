@@ -1,0 +1,68 @@
+@import "../utilities.scss";
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-end {
+  align-self: flex-end !important;
+}
+
+.align-self-center {
+  align-self: center !important;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+@for $size from 0 through 5 {
+  .p-#{$size} {
+    @include p($size);
+  }
+
+  .pr-#{$size} {
+    padding-right: #{$size * 0.5}rem;
+  }
+
+  .pl-#{$size} {
+    padding-left: #{$size * 0.5}rem;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: #{$size * 0.5}rem;
+  }
+
+  .pt-#{$size} {
+    padding-top: #{$size * 0.5}rem;
+  }
+
+  .px-#{$size} {
+    @include px($size);
+  }
+
+  .py-#{$size} {
+    @include py($size);
+  }
+}
+
+.group-left {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-left: 0;
+}
+
+.group-right {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-right-width: 1px;
+  border-right-style: solid;
+}

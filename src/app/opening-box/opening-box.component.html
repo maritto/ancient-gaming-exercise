@@ -1,0 +1,24 @@
+<div>
+  <ag-alert *ngIf="errorMessage" [message]="errorMessage"></ag-alert>
+  <div class="card">
+    <div class="display-info">
+      <div>
+        <div>
+          <span class="h1 pr-1">{{ box?.name }}</span>
+          <ag-pretty-price *ngIf="box" [total]="box.price"></ag-pretty-price>
+        </div>
+        <span class="text-500 py-2">{{ box?.description }}</span>
+      </div>
+      <img class="py-1" src="{{ box?.iconUrl }}">
+      <button type="button" class="btn btn-primary" *ngIf="!loading;else loadingSpinner" (click)="openBox()">Open box</button>
+    </div>
+    <ag-box-results *ngIf="boxResults" [results]="boxResults"></ag-box-results>
+  </div>
+</div>
+<div class="d-flex">
+  <a class="btn btn-reverse-primary" routerLink="/">Back</a>
+</div>
+
+<ng-template #loadingSpinner>
+  <ag-loading-spinner></ag-loading-spinner>
+</ng-template>

@@ -1,0 +1,5 @@
+@import "../shadows.scss";
+
+.light-shadow {
+  @include light-shadow;
+}

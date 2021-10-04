@@ -1,0 +1,4 @@
+<div class="d-flex">
+  <button class="btn btn-primary" type="button" (click)="login()" *ngIf="!user">Login</button>
+  <button class="btn btn-reverse-primary" type="button" (click)="logout()" *ngIf="user">Logout</button>
+</div>

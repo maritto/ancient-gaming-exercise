@@ -1,0 +1,41 @@
+@mixin px($size) {
+  padding-left: #{$size * 0.5}rem;
+  padding-right: #{$size * 0.5}rem;
+}
+
+@mixin py($size) {
+  padding-top: #{$size * 0.5}rem;
+  padding-bottom: #{$size * 0.5}rem;
+}
+
+@mixin p($size) {
+  padding: #{$size * 0.5}rem;
+}
+
+@mixin pl($size) {
+  padding-left: #{$size * 0.5}rem;
+}
+
+@mixin pr($size) {
+  padding-right: #{$size * 0.5}rem;
+}
+
+@mixin pb($size) {
+  padding-bottom: #{$size * 0.5}rem;
+}
+
+@mixin pt($size) {
+  padding-top: #{$size * 0.5}rem;
+}
+
+@mixin mb($size) {
+  margin-bottom: #{$size * 0.5}rem;
+}
+
+@mixin mt($size) {
+  margin-top: #{$size * 0.5}rem;
+}
+
+@mixin g($size) {
+  gap: #{$size * 0.5}rem;
+}

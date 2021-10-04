@@ -1,0 +1,49 @@
+@import "./styling/classes/colors";
+@import "./styling/classes/utilities";
+@import "./styling/classes/typography";
+@import "./styling/classes/forms";
+@import "./styling/classes/animations";
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family;
+  color: inherit;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+:is(html, body) {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:is(a, button) {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+  &-track {
+    background: #f1f1f1;
+  }
+
+  &-thumb {
+    background: #888;
+  }
+
+  &-thumb:hover {
+    background: #555;
+  }
+}

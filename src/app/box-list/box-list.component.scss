@@ -1,0 +1,9 @@
+@import "../../styling/utilities.scss";
+
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  @include g(3);
+  justify-content: flex-start;
+  @include p(3);
+}

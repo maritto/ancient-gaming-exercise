@@ -1,0 +1,12 @@
+@import "../../styling/colors";
+@import "../../styling/shadows";
+
+:host {
+  display: flex;
+  border-bottom: 1px solid $border-color;
+  @include light-shadow;
+  max-height: 65px;
+  background-image: url('/assets/png/spiderweb-pattern.png');
+  align-content: space-between;
+  padding-top: 5px;
+}

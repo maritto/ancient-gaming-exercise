@@ -1,0 +1,9 @@
+@import '../colors';
+
+@each $surface in $surfaces {
+  @each $color-name, $color-value in $color-list {
+    .#{$color-name}-#{$surface} {
+      #{$surface}: map-get($color-list, $color-name);;
+    }
+  }
+}

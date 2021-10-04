@@ -1,0 +1,17 @@
+@import "../../../styling/colors.scss";
+
+div.spinner {
+  border-radius: 50%;
+  border: 3px solid map-get($map: $color-list, $key: "primary");
+  width: 20px;
+  height: 20px;
+  border-bottom: none;
+  border-top: none;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

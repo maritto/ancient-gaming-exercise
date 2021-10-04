@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span{
+    animation: hover 4s alternate cubic-bezier(0.6, -0.14, 0.27, 0.99) infinite;
+  }
+}
+
+

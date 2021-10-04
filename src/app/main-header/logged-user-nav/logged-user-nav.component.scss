@@ -1,0 +1,26 @@
+@import "../../../styling/colors";
+
+:host {
+  div {
+    position: relative;
+    height: 100%;
+    img {
+      height: 100%;
+      width: auto;
+      max-width: 50px;
+      border-radius: 50%;
+      border: 3px solid $light-surface-color;
+    }
+    .hat::before {
+      position: absolute;
+      content: "";
+      background: url("/assets/svg/hat.svg") no-repeat;
+      width: 48px;
+      height: 42px;
+      top: -50%;
+      left: -40%;
+      z-index: 1000;
+      transform: rotateZ(-25deg);
+    }
+  }
+}

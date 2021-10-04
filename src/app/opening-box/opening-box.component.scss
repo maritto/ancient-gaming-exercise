@@ -1,0 +1,33 @@
+@import "../../styling/utilities.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  @include p(3);
+  justify-content: space-between;
+  flex:1 1 0;
+
+  .card {
+    @include mb(3);
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    align-content: center;
+    @include p(3);
+    background-color: white;
+
+    .display-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      align-items: center;
+    }
+
+    img {
+      align-self: center;
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../../styling/utilities.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  @include p(1);
+  max-width: min(250px, 100%);
+  min-width: 250px;
+  background-color: white;
+  transition: 1s transform;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
